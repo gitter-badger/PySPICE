@@ -77,7 +77,7 @@ def set_build_paths():
 
     for flag, dirname in (('-I', 'include'), ('-L', 'lib')):
         path = os.path.join(CSPICE_SRC, dirname)
-        sys.argv.append('%s%s' % (flag, path))
+        #sys.argv.append('%s%s' % (flag, path))
 
 try:
     build_cspice()
